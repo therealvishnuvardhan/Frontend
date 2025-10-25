@@ -56,7 +56,7 @@ export default function Signup() {
     try {
       const { confirmPassword, ...submitData } = formData;
       
-      const response = await fetch("http://localhost:5000/api/auth/signup", {
+      const response = await fetch("https://auto-tech-code-babies.vercel.app/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
